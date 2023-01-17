@@ -13,3 +13,5 @@ function solution(num_list) {
 
   return answer;
 }
+
+// 체크 for(let a of) 형태
