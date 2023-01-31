@@ -1,5 +1,15 @@
-function getFacto(num) {
-  // 재귀를 통해 n*n-1... 을 구현함
-  if (num > 1) return num * getFacto(num - 1);
-  return num;
+function solution(n) {
+  let ans = 1;
+
+  for (let i = 1; i <= n; i++) {
+    ans *= i;
+
+    if (ans === n) {
+      return i;
+    }
+
+    if (ans > n) {
+      return i - 1;
+    }
+  }
 }
