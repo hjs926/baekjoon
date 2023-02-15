@@ -21,3 +21,16 @@ function solution(denum1, num1, denum2, num2) {
 // 2-2. 작은수를 분자분모로 나눠보기
 // 2-2-1. 둘다 나누어 떨어지면 그 나눈 수가 최대공약수
 // 2-2-2. 안 나누어 떨어지면 작은 술르 1 줄이고 2-2로 돌아가기
+
+function fnGCD(a, b) {
+  return a % b ? fnGCD(b, a % b) : b;
+}
+
+function solution(denum1, num1, denum2, num2) {
+  let denum = denum1 * num2 + denum2 * num1;
+  let num = num1 * num2;
+  let gcd = fnGCD(denum, num); //최대공약수
+
+  return [denum / gcd, num / gcd];
+}
+// GCD - greatest common divisor.
