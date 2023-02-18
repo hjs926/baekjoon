@@ -7,6 +7,7 @@ function solution(num1, num2) {
   var answer = num1 === num2 ? 1 : -1;
   return answer;
 }
+//삼항연산자 사용
 
 function solution(num1, num2) {
   if (num1 === num2) {

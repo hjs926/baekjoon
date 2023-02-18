@@ -22,6 +22,7 @@ function solution(denum1, num1, denum2, num2) {
 // 2-2-1. 둘다 나누어 떨어지면 그 나눈 수가 최대공약수
 // 2-2-2. 안 나누어 떨어지면 작은 술르 1 줄이고 2-2로 돌아가기
 
+//1 gcd 함수를 만들고 연산자 특성 이용
 function fnGCD(a, b) {
   return a % b ? fnGCD(b, a % b) : b;
 }
@@ -33,4 +34,15 @@ function solution(denum1, num1, denum2, num2) {
 
   return [denum / gcd, num / gcd];
 }
-// GCD - greatest common divisor.
+
+//2
+function solution(denum1, num1, denum2, num2) {
+  const denum = denum1 * num2 + denum2 * num1;
+  const num = num1 * num2;
+  const gcd = (p, q) => {
+    if (q === 0) return p;
+    return gcd(q, p % q);
+  };
+  const g = gcd(denum, num);
+  return [denum / g, num / g];
+}
