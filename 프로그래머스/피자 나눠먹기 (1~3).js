@@ -33,3 +33,18 @@ function solution(n) {
 function solution(slice, n) {
   return n % slice === 0 ? n / slice : Math.floor(n / slice + 1);
 }
+
+// 다른사람 풀이
+//1
+function solution(slice, n) {
+  let i = 1;
+  while (slice * i < n) {
+    i++;
+  }
+  return i;
+}
+
+//2
+function solution(slice, n) {
+  return Math.ceil(n / slice);
+}
