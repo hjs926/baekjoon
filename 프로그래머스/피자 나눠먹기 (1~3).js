@@ -27,3 +27,9 @@ function solution(n) {
   }
   return pizza;
 }
+
+//(3)
+// 나의 풀이
+function solution(slice, n) {
+  return n % slice === 0 ? n / slice : Math.floor(n / slice + 1);
+}
