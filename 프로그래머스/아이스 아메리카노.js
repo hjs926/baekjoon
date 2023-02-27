@@ -16,8 +16,8 @@ function solution(money) {
   }
   return [count, money];
 }
-
-//(1) 다른사람의 풀이
+//다른사람의 풀이
+//(1) 
 function solution(money) {
   return [Math.floor(money / 5500), money % 5500];
 }

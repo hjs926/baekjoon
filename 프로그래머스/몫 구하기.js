@@ -6,6 +6,7 @@ function solution(num1, num2) {
 // 소수점 뒤만 날리기 버림
 // Math.floor 사용
 
+// (1)
 function solution(num1, num2) {
   var answer = Math.floor(num1 / num2);
   return answer;
