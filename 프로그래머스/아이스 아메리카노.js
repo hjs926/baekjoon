@@ -21,3 +21,8 @@ function solution(money) {
 function solution(money) {
   return [Math.floor(money / 5500), money % 5500];
 }
+
+//(2)
+function solution(money) {
+  return [~~(money / 5500), money % 5500];
+}
