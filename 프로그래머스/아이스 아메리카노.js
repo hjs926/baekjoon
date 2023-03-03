@@ -16,8 +16,16 @@ function solution(money) {
   }
   return [count, money];
 }
+
+// 나의 풀이 추가
+function solution(money) {
+  const coffeeCnt = Math.floor(money / 5500);
+  const moneyLeft = money % 5500;
+  return [coffeeCnt, moneyLeft];
+}
+
 //다른사람의 풀이
-//(1) 
+//(1)
 function solution(money) {
   return [Math.floor(money / 5500), money % 5500];
 }
