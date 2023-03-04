@@ -3,3 +3,9 @@ function solution(my_string) {
   answer = my_string.split("").reverse().join("");
   return answer;
 }
+
+//다른사람풀이
+//1
+function solution(my_string) {
+  return my_string.split("").reverse().join("");
+}
