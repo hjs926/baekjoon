@@ -9,3 +9,9 @@ function solution(my_string) {
 function solution(my_string) {
   return my_string.split("").reverse().join("");
 }
+
+//2
+function solution(my_string) {
+  var answer = [...my_string].reverse().join("");
+  return answer;
+}
