@@ -8,3 +8,13 @@ function solution(my_string, letter) {
 function solution(my_string, letter) {
   return my_string.replaceAll(letter, "");
 }
+
+//2
+function solution(my_string, letter) {
+  let str = "";
+  const arr = my_string.split("");
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== letter) str += arr[i];
+  }
+  return str;
+}
