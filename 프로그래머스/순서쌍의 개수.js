@@ -5,5 +5,6 @@ function solution(n) {
       divisor.push(i);
     }
   }
+
   return divisor.length;
 }
