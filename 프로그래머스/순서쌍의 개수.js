@@ -16,3 +16,4 @@ function solution(n) {
 
   return Number.isInteger(Math.sqrt(n)) ? ans + 1 : ans;
 }
+
