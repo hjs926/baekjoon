@@ -24,3 +24,11 @@ function solution(num_list) {
     num_list.filter((num) => num % 2 === 1).length,
   ];
 }
+
+//2
+function solution(list) {
+  return list.reduce(
+    (acc, cur) => (cur & 1 ? acc[1]++ : acc[0]++, acc),
+    [0, 0]
+  );
+}
