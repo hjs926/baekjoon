@@ -10,3 +10,16 @@ function factorial(num) {
   }
   return returnFactorial;
 }
+
+//1
+function solution(balls, share) {
+  if (share === 0) return 1;
+  return Math.floor(
+    factorial(balls) / (factorial(balls - share) * factorial(share))
+  );
+}
+
+function factorial(n) {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
